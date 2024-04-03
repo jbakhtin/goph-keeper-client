@@ -1,7 +1,7 @@
 package primary
 
 import (
-	"github.com/jbakhtin/goph-keeper/internal/client/appmodules/auth/domain/dto"
+	"github.com/jbakhtin/goph-keeper/internal/appmodules/auth/domain/dto"
 )
 
 type UseCase interface {

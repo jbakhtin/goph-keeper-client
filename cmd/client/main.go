@@ -9,11 +9,11 @@ import (
 	"log"
 	"os"
 
-	"github.com/jbakhtin/goph-keeper/gen/go/v1/auth"
-	"github.com/jbakhtin/goph-keeper/gen/go/v1/kv"
+	"github.com/jbakhtin/goph-keeper-client/gen/go/v1/auth"
+	"github.com/jbakhtin/goph-keeper-client/gen/go/v1/kv"
 
 	"github.com/go-faster/errors"
-	"github.com/jbakhtin/goph-keeper/internal/client/infrastructure/persistance/grpc/credentials"
+	"github.com/jbakhtin/goph-keeper-client/internal/infrastructure/persistance/grpc/credentials"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/emptypb"
