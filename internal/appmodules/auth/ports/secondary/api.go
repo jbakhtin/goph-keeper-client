@@ -1,12 +1,13 @@
 package secondary
 
 import (
-	"github.com/jbakhtin/goph-keeper/internal/client/appmodules/auth/domain/dto"
+	"context"
+	"github.com/jbakhtin/goph-keeper-client/internal/appmodules/auth/domain/dto"
 )
 
 type ApiPort interface {
-	Registration(dto.RegistrationDTO) (dto.TokensPairDTO, error)
-	Login(dto.LoginDTO) (dto.TokensPairDTO, error)
-	RefreshToken(string) (dto.TokensPairDTO, error)
-	Logout() error
+	Registration(context.Context, dto.RegistrationDTO) error
+	Login(context.Context, dto.LoginDTO) (*dto.TokensPairDTO, error)
+	RefreshToken(context.Context) (*dto.TokensPairDTO, error)
+	Logout(context.Context, int) error
 }

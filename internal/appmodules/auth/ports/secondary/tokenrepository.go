@@ -1,7 +1,7 @@
 package secondary
 
 import (
-	"github.com/jbakhtin/goph-keeper/internal/client/appmodules/auth/domain/dto"
+	"github.com/jbakhtin/goph-keeper-client/internal/appmodules/auth/domain/dto"
 )
 
 type TokenRepository interface {
