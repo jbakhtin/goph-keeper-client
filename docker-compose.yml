@@ -1,0 +1,16 @@
+services:
+  database-client:
+    image: postgres
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      - HOST=localhost
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_USER=bakhtin
+      - POSTGRES_DB=goph_keeper_client
+  adminer:
+      image: adminer
+      restart: always
+      ports:
+        - 8081:8080
