@@ -1,4 +1,4 @@
-storage/
+storage/logs
 bin/
 cert/*.pem
 cmd/sandbox/
